@@ -40,7 +40,37 @@ With the Guest Account you can:
 
 Creating a Guest Account: 
 1. New user signup with phone number with [Account Sign Up](https://documenter.getpostman.com/view/5775523/RzZ4qMsX#6459edb6-3f41-4901-8827-c0ecb77b6294), which will trigger an OTP.
+
+<!-- tabs:start -->
+#### **curl**
+```bash
+curl "https://sandbox-id.xfers.com/api/v3/authorize/signup_login" -X POST \
+	-H "X-XFERS-APP-API-KEY: dS7zxQydn4PLxwNE3kuyb4pg6BsNWHE818D2wbhoavQ" \
+	-H "Content-Type: application/json" \
+	-d "{\"phone_no\" : \"+6287785725657\", \"signature\" : \"5488737c67d790565a15a2dbc3c98bf778aac2c0\"}"
+```
+<!-- tabs:end -->
 2. Get the user's token with the [Get User API Token](https://documenter.getpostman.com/view/5775523/RzZ4qMsX#9ea968ba-4fa1-4d11-bc93-5cc78bc8097d). This token is needed to move money in and out of user accounts.
+
+<!-- tabs:start -->
+#### **curl**
+```bash
+curl "https://sandbox-id.xfers.com/api/v3/authorize/get_token?otp={{$otp}}&phone_no=%2B6287785725657&signature={{$signature}}" -X GET \
+	-H "X-XFERS-APP-API-KEY: dS7zxQydn4PLxwNE3kuyb4pg6BsNWHE818D2wbhoavQ" \
+	-H "Content-Type: application/x-www-form-urlencoded"
+```
+<!-- tabs:end -->
+
+```json
+Response:200
+{
+	"msg": "success",
+	"id": "user_csn7v5lyn4a6",
+	"user_api_token": "A-Bm4vmjmGyhRaMEoxqBGeoXCEQwJYksrTXc6-ypsyk",
+	"currency": "idr",
+	"is_fully_verified": true
+}
+```
 
 ## Verified Account
 ### _KYC verification, Higher limit_
@@ -55,6 +85,46 @@ With the Verified Account you can:
 
 Creating a Verified Account:
 1. New user signup with phone number with [Account Sign Up](https://documenter.getpostman.com/view/5775523/RzZ4qMsX#6459edb6-3f41-4901-8827-c0ecb77b6294), which will trigger an OTP.
+
+<!-- tabs:start -->
+#### **curl**
+```bash
+curl "https://sandbox-id.xfers.com/api/v3/authorize/signup_login" -X POST \
+	-H "X-XFERS-APP-API-KEY: dS7zxQydn4PLxwNE3kuyb4pg6BsNWHE818D2wbhoavQ" \
+	-H "Content-Type: application/json" \
+	-d "{\"phone_no\" : \"+6287785725657\", \"signature\" : \"5488737c67d790565a15a2dbc3c98bf778aac2c0\"}"
+```
+<!-- tabs:end -->
+
 2. Get the user's token with the [Get User API Token](https://documenter.getpostman.com/view/5775523/RzZ4qMsX#9ea968ba-4fa1-4d11-bc93-5cc78bc8097d). This token is needed to move money in and out of user accounts.
+
+<!-- tabs:start -->
+#### **curl**
+```bash
+curl "https://sandbox-id.xfers.com/api/v3/authorize/get_token?otp={{$otp}}&phone_no=%2B6287785725657&signature={{$signature}}" -X GET \
+	-H "X-XFERS-APP-API-KEY: dS7zxQydn4PLxwNE3kuyb4pg6BsNWHE818D2wbhoavQ" \
+	-H "Content-Type: application/x-www-form-urlencoded"
+```
+<!-- tabs:end -->
+
+```json
+Response:200
+{
+	"msg": "success",
+	"id": "user_csn7v5lyn4a6",
+	"user_api_token": "Qh9fors4WmjTfeisB9qEAdsAzEXgeHVQF3-NsE5yi-c",
+	"currency": "idr",
+	"is_fully_verified": true
+}
+```
 3. [Submit KYC information](https://documenter.getpostman.com/view/5775523/RzZ4qMsX#c9d76d3d-6b03-48e9-bd22-e585b9da755f) with the required data.
 
+<!-- tabs:start -->
+#### **curl**
+```bash
+curl "https://sandbox-id.xfers.com/api/v3/user" -X PUT\
+	-H "X-XFERS-USER-API-KEY: Qh9fors4WmjTfeisB9qEAdsAzEXgeHVQF3-NsE5yi-c" \
+	-H "Content-Type: application/json" \
+	-d "{\"mother_maiden_name\": \"Luna\", \"id_front_url\": \"http://res.freestockphotos.biz/pictures/8/8453-a-blue-sky-with-white-clouds-pv.jpg\", \"selfie_2id_url\": \"http://res.freestockphotos.biz/pictures/8/8453-a-blue-sky-with-white-clouds-pv.jpg\"}"
+```
+<!-- tabs:end -->
