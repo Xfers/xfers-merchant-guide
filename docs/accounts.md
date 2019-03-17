@@ -3,7 +3,7 @@ To start onboarding users for any of our solutions, you will have to register an
 - Guest Account
 - Verified Account
 
-!> Note that it is possible to simultaneously manage different account types on your platform
+?> Note that it is possible to simultaneously manage different account types on your platform
 
 To determine which types of accounts will work best for your use case, you should consider the following factors:
 
