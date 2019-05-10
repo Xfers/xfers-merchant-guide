@@ -19,7 +19,7 @@ To start making disbursements to users on your platform, you will have to regist
 #### **curl**
 ```bash
 curl "https://sandbox-id.xfers.com/api/v3/authorize/private_wallet" -X POST \
-  -H "X-XFERS-APP-API-KEY: TjETqu8GsJPGgbxEN85jw8cBcEFs8p6HqsQ3dEcDgDw" \
+  -H "X-XFERS-APP-API-KEY: wFR74xhD4LyGFTf9RxVP2jXdt9ogkPK7zKB95wSWPxs" \
   -H "Content-Type: application/json" \
   -d "{\"phone_no\" : \"+6287785725657\", \"signature\" : \"0218525f26d5d248d2ca835036dac2f3ecef3c85\"}"
 ```
@@ -39,7 +39,7 @@ After adding the bank account information, you can make a [Withdrawal on Behalf]
 #### **curl**
 ```bash
 curl "https://sandbox-id.xfers.com/api/v3/user/bank_account" -X POST \
-  -H "X-XFERS-USER-API-KEY: Qh9fors4WmjTfeisB9qEAdsAzEXgeHVQF3-NsE5yi-c" \
+  -H "X-XFERS-USER-API-KEY: user_api_token_obtained_from_above_response_here" \
   -H "Content-Type: application/json" \
   -d "{\"account_no\": \"1680366060\", \"bank\":\"BCA\"}"
 ```
@@ -50,9 +50,9 @@ curl "https://sandbox-id.xfers.com/api/v3/user/bank_account" -X POST \
 <!-- tabs:start -->
 #### **curl**
 ```bash
-curl "https://sandbox-id.xfers.com/api/v3/user/bank_account/175/withdraw" -X POST \
-  -H "X-XFERS-USER-API-KEY: Qh9fors4WmjTfeisB9qEAdsAzEXgeHVQF3-NsE5yi-c" \
+curl "https://sandbox-id.xfers.com/api/v3/user/bank_account/2884/withdraw" -X POST \
+  -H "X-XFERS-USER-API-KEY: wFR74xhD4LyGFTf9RxVP2jXdt9ogkPK7zKB95wSWPxs" \
   -H "Content-Type: application/json" \
-  -d "{\"amount\": \"120000.0\"}"
+  -d "{\"amount\": \"11000.0\", \"idempotency_id\":\"order_123\", \"user_api_token\":\"user_api_token_obtained_from_above_response_here\"}"
 ```
 <!-- tabs:end -->
