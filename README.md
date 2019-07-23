@@ -3,6 +3,8 @@
 
 Edit the /docs folder. its the source for github pages https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages 
 
+# Templating engine
+this merchant guide is powered by https://docsify.js.org/#/ 
 
 # custom domain summary
 1. go to dns provider eg: cloudflare/aws/godaddy
