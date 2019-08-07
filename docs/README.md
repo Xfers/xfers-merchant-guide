@@ -10,6 +10,8 @@ Easy API platform integration
 Flexible payment products and solutions that cater to your needs
 Focus on developing your core business instead of the supporting payment system
 
+To read the web version of our docs visit this [link](https://xfers.github.io/xfers-merchant-guide/#/). 
+
 ## Xfers-Sobatku
 Xfers formed a partnership with the credit union Koperasi Simpan Pinjam Sahabat Mitra Sejati (KSP SMS) and Bank Sahabat Sampoerna to launch an E-Savings product, Xfers-Sobatku, with the aim of providing a scalable and compliant solution to our merchants.
 Each verified account on our platform is backed by an Xfers-Sobatku E-Savings account at KSP SMS, and you can be assured that your users’ money is secure. 
