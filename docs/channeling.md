@@ -1,7 +1,7 @@
 # CHANNELING 
 Looking for a source of fund can be an obstacle for any company that wants to provide a financial service and meet the demands of its users. Banks on the other hand face the challenge of rising consumer acquisition cost and competition. Channeling helps to bridge this gap. 
 
-In its essence Channeling is a form partnership made between an institutional lender, underwriter and a borrower. With Xfers channeling solution you will be able to provide financing to your users from our bank partner, as the source of fund, through our developer-friendly APIs. Your platform will assess the creditworthiness of the borrower, originate and underwrite the loan. Our platform will support the loan request and disbursement to your users. 
+In its essence Channeling is a form partnership made between an institutional lender, underwriter and a borrower. With our Channeling solution, you will be able to provide financing to your users with our partner bank as the source of funds, simply by implementing our developer-friendly APIs. Your platform will assess the creditworthiness of the borrower, originate and underwrite the loan. Our platform will support the loan request and disbursement to your users. 
 
 ##  Managed Account
 
