@@ -4,4 +4,5 @@
 * [Wallet Kit](wallet_kit.md)
 * [Payments](payments.md)
 * [Disbursements](disbursements.md)
+* [Channeling](channeling.md)
 * [API Specifications](api_specifications.md)
