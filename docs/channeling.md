@@ -16,14 +16,3 @@ Upon approval the loans are instantly disburse once you call our [Withdrawal API
 ## Repayment
 
 To make a loan repayment you will need to create a transaction from an Xfers managed account. You will also need to send through the repayment data in accordance to the loan ID and tenor.  
-
-<!-- tabs:start -->
-#### **curl**
-```bash
-curl --location --request POST "{{base-api-url}}api/v3/loans/%3Cloan_id%3E/repayments" \
-  --header "X-XFERS-USER-API-KEY: {{user-api-token}}" \
-  --header "Content-Type: application/json" \
-  --form "amount=1000.50" \
-  --form "collection_fee=10.50"
-```
-<!-- tabs:end -->
