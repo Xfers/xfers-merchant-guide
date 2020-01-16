@@ -5,4 +5,5 @@
 * [Payments](payments.md)
 * [Disbursements](disbursements.md)
 * [Channeling](channeling.md)
+* [Electronic Signature](esignature.md)
 * [API Specifications](api_specifications.md)
